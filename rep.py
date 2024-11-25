@@ -59,6 +59,9 @@ def replace_text(text, crd):
                 break
     
     for k, v in replacements.items():
+        # this is incorrect, but good enough for short texts
+        # - capitalization needs to match
+        # - POS tag needs to match
         text = text.replace(k, v)
 
     return text
